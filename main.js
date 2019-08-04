@@ -24,5 +24,6 @@ function fetchIssues() {
 }
 
 document.getElementById("button").addEventListener('click', function() {
-  document.getElementById("message").innerText = "Button Pressed"
+  document.getElementById("message").innerHTML = "Button Pressed"
+  console.log("button pressed")
 });
