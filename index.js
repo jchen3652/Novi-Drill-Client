@@ -8,8 +8,3 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
-
-
-document.getElementById("button").addEventListener('click', function() {
-  document.getElementById("message").innerText = "Button Pressed"
-});
