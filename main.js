@@ -23,7 +23,7 @@ function fetchIssues() {
   }
 }
 
-document.getElementById("button").addEventListener('click', function() {
+document.getElementById("submit").addEventListener('click', function() {
   document.getElementById("message").innerHTML = "Button Pressed"
   console.log("button pressed")
 });
