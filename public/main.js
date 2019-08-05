@@ -24,7 +24,6 @@ function fetchIssues() {
 }
 
 document.getElementById("showlife").addEventListener('click', function() {
-  document.getElementById("message").innerHTML = "Button Pressed"
-  console.log("button pressed")
-
+  document.getElementById("message").innerHTML = "Your performer number is: " + document.getElementById("performerNumber").value;
+  console.log("button pressed");
 });
