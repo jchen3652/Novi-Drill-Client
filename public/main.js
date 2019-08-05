@@ -26,4 +26,5 @@ function fetchIssues() {
 document.getElementById("showlife").addEventListener('click', function() {
   document.getElementById("message").innerHTML = "Button Pressed"
   console.log("button pressed")
+
 });
