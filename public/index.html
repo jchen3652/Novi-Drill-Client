@@ -17,12 +17,31 @@
     <h1>Novi Drill Client </h1>
 
     <div class="jumbotron">
+
       <form id="issueInputForm">
         <div class="form-group">
-          <!-- <textarea rows="4" cols="50"></textarea> -->
-          <input type="text" id="performerNumber" class="form-control" id="issueDescInput" placeholder="Enter your performer number">
+          <div>
+            <t>Select the movement of the show to generate</t>
+          </div>
+          <div>
+            <select id="movement">
+              <option value="1">Part 1</option>
+              <option value="2">Part 2</option>
+            </select>
+          </div>
         </div>
-        <button type="button" class="btn btn-primary">Submit</button>
+
+        <div class="form-group">
+          <div>
+            <t>Enter your performer number</t>
+          </div>
+          <div>
+            <input type="text" id="performerNumber" class="form-control" id="issueDescInput" placeholder="Enter your performer number">
+          </div>
+        </div>
+
+        <button type="button" id="submit" class="btn btn-primary">Submit</button>
+
       </form>
     </div>
 
