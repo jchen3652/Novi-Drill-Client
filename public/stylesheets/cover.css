@@ -40,8 +40,7 @@ body {
   /* The image used */
   -webkit-transform: translate3d(0, 0, 0);
   overflow: hidden;
-  background-image: url('../assets/main-background.jpg');
-  /* Add the blur effect */
+  background-image: url("../assets/mobilebackground.png");
   filter: blur(2px);
   -webkit-filter: blur(4px);
   /* Full height */
@@ -150,7 +149,7 @@ body {
 /*
  * Affix and center
  */
-@media (min-width: 40em) {
+@media (min-width: 640px) {
 
   /* Pull out the header and footer */
   .masthead {
@@ -177,12 +176,16 @@ body {
   }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 992px) {
 
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 42rem;
+    width: 50%;
+  }
+
+  .background {
+    background-image: url('../assets/main-background.jpg');
   }
 }
 
