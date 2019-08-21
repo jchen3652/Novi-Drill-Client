@@ -1,63 +1,88 @@
 <!DOCTYPE html>
+<!-- saved from url=(0049)https://v4-alpha.getbootstrap.com/examples/cover/ -->
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Novi Drill Client</title>
-  <!-- Bootstrap -->
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="https://v4-alpha.getbootstrap.com/favicon.ico">
+
+  <title>Cover Template for Bootstrap</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="stylesheets/cover.css" rel="stylesheet">
+
 </head>
 
 <body>
-  <div class="container">
-    <h1>Novi Drill Client </h1>
-    <h2>Beta version 0.1</h2>
 
-    <div class="jumbotron" style="padding: 20px">
+  <div class="site-wrapper">
 
+    <div class="site-wrapper-inner">
 
-        <div class="form-group">
-          <div>
-            <t>Select the movement of the show to generate</t>
+      <div class="cover-container" style="width: 50%">
+        <div class="inner cover" style="padding: 20px;background-color: rgba(0, 0 ,0,0.5); border-radius: 10px">
+          <h1 class="cover-heading">Novi Drill Client 2019</h1>
+          <p class="lead" style="margin-left:20px; margin-right: 20px">Beta version 0.1 </p>
+          <p class="lead" style="margin-left:20px; margin-right: 20px">The Novi Drill Client is designed to generate <i>individual</i> drill charts for performers,
+            enabling band members to have an accurate picture of their position on the field. </p>
+          <div class="form-group">
+            <div>
+              <t class="lead">Select the movement of the show to generate</t>
+            </div>
+            <div>
+              <select id="movement" class="form-control" style="width: 40%; margin: auto">
+                <option value="1">Part 1</option>
+                <option value="2">Part 2</option>
+              </select>
+            </div>
           </div>
-          <div>
-            <select id="movement">
-              <option value="1">Part 1</option>
-              <option value="2">Part 2</option>
-            </select>
+
+          <div class="form-group">
+            <div>
+              <t class="lead">Enter your performer number. (Colorguard will need to add a G before their number)</t>
+            </div>
+            <div>
+              <input type="text" id="performerNumber" class="form-control" id="issueDescInput" placeholder="C1, D2, F11, etc" style="width: 40%; margin:auto">
+            </div>
           </div>
+
+          <button type="button" id="submit" class="btn btn-lg btn-secondary">Submit</button>
+          <p class="lead" style="margin-left:20px; margin-right: 20px">If there are any issues, contact Joshua Huang at <a href="mailto:joshua.huang@frogforce503.org">joshua.huang@frogforce503.org</href>. </p>
+
+
         </div>
 
-        <div class="form-group">
-          <div>
-            <t>Enter your performer number. (Colorguard will need to add a G before their number)</t>
-          </div>
-          <div>
-            <input type="text" id="performerNumber" class="form-control" id="issueDescInput" placeholder="C1, D2, F11, etc" style="width: 20%">
-          </div>
-        </div>
 
-        <button type="button" id="submit" class="btn btn-primary">Submit</button>
+      </div>
 
-      
     </div>
 
-    <!-- <div class="footer">
-      <div>
-        <p1 id=message>Message</p1>
-      </div>
-      <button type="button" id="showlife" class="btn btn-primary">Show a sign of life</button>
-    </div> -->
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://chancejs.com/chance.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="stylesheets/jquery-3.1.1.slim.min.js.download" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="stylesheets/jquery.min.js"><\/script>')
+  </script>
+  <script src="stylesheets/tether.min.js.download" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="stylesheets/bootstrap.min.js.download"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="stylesheets/ie10-viewport-bug-workaround.js.download"></script>
   <script src="main.js"></script>
+
+
 </body>
 
 </html>

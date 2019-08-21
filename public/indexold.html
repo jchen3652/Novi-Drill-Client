@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Novi Drill Client</title>
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Novi Drill Client </h1>
+    <h2>Beta version 0.1</h2>
+
+    <div class="jumbotron" style="padding: 20px">
+
+
+      <div class="form-group">
+        <div>
+          <t>Select the movement of the show to generate</t>
+        </div>
+        <div>
+          <select id="movement">
+            <option value="1">Part 1</option>
+            <option value="2">Part 2</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div>
+          <t>Enter your performer number. (Colorguard will need to add a G before their number)</t>
+        </div>
+        <div>
+          <input margin="10px" type="text" id="performerNumber" class="form-control" id="issueDescInput" placeholder="C1, D2, F11, etc" style="width: 20%">
+        </div>
+      </div>
+
+      <button type="button" id="submit" class="btn btn-primary">Submit</button>
+
+
+    </div>
+
+    <!-- <div class="footer">
+      <div>
+        <p1 id=message>Message</p1>
+      </div>
+      <button type="button" id="showlife" class="btn btn-primary">Show a sign of life</button>
+    </div> -->
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://chancejs.com/chance.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
