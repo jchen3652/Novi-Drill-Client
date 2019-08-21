@@ -18,3 +18,13 @@ document.getElementById("submit").addEventListener('click', function() {
   // document.getElementById("message").innerHTML = url;
   window.location.href = url;
 });
+
+// Execute a function when the user releases a key on the keyboard
+document.getElementById("performerNumber").addEventListener("keyup", function(event) {4
+  console.log("button was pressed");
+  // Enter
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("submit").click();
+  }
+});
